@@ -49,19 +49,17 @@ function draw() {
   if(gameState===PLAY){
     
     //Call fruits and Monster function
-    fruits();
-    Monster();
+    
     
     // Move sword with mouse
-    knife.y=World.mouseY;
-    knife.x=World.mouseX;
+    
   
     // Increase score if sword touching fruit
     if(fruitGroup.isTouching(knife)){
-      fruitGroup.destroyEach();
+      
       
       knifeSwooshSound.play();
-      score=score+2;
+     
     }
     else
     {
